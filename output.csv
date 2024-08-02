@@ -1,0 +1,3 @@
+url,method,requestBody,responseBody,responseTime,responseHeaders,statusCode
+https://jsonplaceholder.typicode.com/posts,undefined,{},Cannot read properties of undefined (reading 'trim'),0,{},N/A
+https://jsonplaceholder.typicode.com/posts,undefined,"{ 'title': 'foo', 'body': 'bar', 'userId': 1 }",Cannot read properties of undefined (reading 'trim'),0,{},N/A

@@ -1,0 +1,24 @@
+[
+  {
+    "method": "GET",
+    "url": "https://jsonplaceholder.typicode.com/posts",
+    "params": {},
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "data": {}
+  },
+  {
+    "method": "POST",
+    "url": "https://jsonplaceholder.typicode.com/posts",
+    "params": {},
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "data": {
+      "title": "foo",
+      "body": "bar",
+      "userId": 1
+    }
+  }
+]
