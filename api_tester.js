@@ -15,6 +15,14 @@ async function readJSONFile(filePath) {
 }
 
 async function writeCSVFile(filePath, data) {
+  // Delete the existing file if it exists
+  try {
+    if (fs.existsSync(filePath)) {
+      fs.unlinkSync(filePath);
+    }
+  } catch (err) {
+    console.error(`Error deleting the file: ${err}`);
+  }
   const csv = await json2csv(data);
   return new Promise((resolve, reject) => {
     fs.writeFile(filePath, csv, 'utf8', (err) => {
