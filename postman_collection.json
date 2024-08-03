@@ -1,0 +1,564 @@
+{
+	"info": {
+		"_postman_id": "9497947b-cb97-461d-857c-4a4a82766089",
+		"name": "JSONPlaceholder",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16554732"
+	},
+	"item": [
+		{
+			"name": "posts",
+			"item": [
+				{
+					"name": "GET all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://jsonplaceholder.org/posts",
+							"protocol": "http",
+							"host": [
+								"jsonplaceholder",
+								"org"
+							],
+							"path": [
+								"posts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET :id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://jsonplaceholder.org/posts/6",
+							"protocol": "http",
+							"host": [
+								"jsonplaceholder",
+								"org"
+							],
+							"path": [
+								"posts",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET ?id=\"\"",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://jsonplaceholder.org/posts?id=7",
+							"protocol": "http",
+							"host": [
+								"jsonplaceholder",
+								"org"
+							],
+							"path": [
+								"posts"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "7"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n    \"id\": 1,\r\n    \"slug\": \"lorem-ipsum\",\r\n    \"url\": \"https://jsonplaceholder.org/posts/lorem-ipsum\",\r\n    \"title\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit.\",\r\n    \"content\": \"Ante taciti nulla sit libero orci sed nam. Sagittis suspendisse gravida ornare iaculis cras nullam varius ac ullamcorper. Nunc euismod hendrerit netus ligula aptent potenti. Aliquam volutpat nibh scelerisque at. Ipsum molestie phasellus euismod sagittis mauris, erat ut. Gravida morbi, sagittis blandit quis ipsum mi mus semper dictum amet himenaeos. Accumsan non congue praesent interdum habitasse turpis orci. Ante curabitur porttitor ullamcorper sagittis sem donec, inceptos cubilia venenatis ac. Augue fringilla sodales in ullamcorper enim curae; rutrum hac in sociis! Scelerisque integer varius et euismod aenean nulla. Quam habitasse risus nullam enim. Ultrices etiam viverra mattis aliquam? Consectetur velit vel volutpat eget curae;. Volutpat class mus elementum pulvinar! Nisi tincidunt volutpat consectetur. Primis morbi pulvinar est montes diam himenaeos duis elit est orci. Taciti sociis aptent venenatis dui malesuada dui justo faucibus primis consequat volutpat. Rhoncus ante purus eros nibh, id et hendrerit pellentesque scelerisque vehicula sollicitudin quam. Hac class vitae natoque tortor dolor dui praesent suspendisse. Vehicula euismod tincidunt odio platea aenean habitasse neque ad proin. Bibendum phasellus enim fames risus eget felis et sem fringilla etiam. Integer.\",\r\n    \"image\": \"https://dummyimage.com/800x430/FFFFFF/lorem-ipsum.png&text=jsonplaceholder.org\",\r\n    \"thumbnail\": \"https://dummyimage.com/200x200/FFFFFF/lorem-ipsum.png&text=jsonplaceholder.org\",\r\n    \"status\": \"published\",\r\n    \"category\": \"lorem\",\r\n    \"publishedAt\": \"04/02/2023 13:25:21\",\r\n    \"updatedAt\": \"14/03/2023 17:22:20\",\r\n    \"userId\": 1\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://jsonplaceholder.org/posts",
+							"protocol": "http",
+							"host": [
+								"jsonplaceholder",
+								"org"
+							],
+							"path": [
+								"posts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT :id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n    \"id\": 1,\r\n    \"slug\": \"lorem-ipsum\",\r\n    \"url\": \"https://jsonplaceholder.org/posts/lorem-ipsum\",\r\n    \"title\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit.\",\r\n    \"content\": \"Ante taciti nulla sit libero orci sed nam. Sagittis suspendisse gravida ornare iaculis cras nullam varius ac ullamcorper. Nunc euismod hendrerit netus ligula aptent potenti. Aliquam volutpat nibh scelerisque at. Ipsum molestie phasellus euismod sagittis mauris, erat ut. Gravida morbi, sagittis blandit quis ipsum mi mus semper dictum amet himenaeos. Accumsan non congue praesent interdum habitasse turpis orci. Ante curabitur porttitor ullamcorper sagittis sem donec, inceptos cubilia venenatis ac. Augue fringilla sodales in ullamcorper enim curae; rutrum hac in sociis! Scelerisque integer varius et euismod aenean nulla. Quam habitasse risus nullam enim. Ultrices etiam viverra mattis aliquam? Consectetur velit vel volutpat eget curae;. Volutpat class mus elementum pulvinar! Nisi tincidunt volutpat consectetur. Primis morbi pulvinar est montes diam himenaeos duis elit est orci. Taciti sociis aptent venenatis dui malesuada dui justo faucibus primis consequat volutpat. Rhoncus ante purus eros nibh, id et hendrerit pellentesque scelerisque vehicula sollicitudin quam. Hac class vitae natoque tortor dolor dui praesent suspendisse. Vehicula euismod tincidunt odio platea aenean habitasse neque ad proin. Bibendum phasellus enim fames risus eget felis et sem fringilla etiam. Integer.\",\r\n    \"image\": \"https://dummyimage.com/800x430/FFFFFF/lorem-ipsum.png&text=jsonplaceholder.org\",\r\n    \"thumbnail\": \"https://dummyimage.com/200x200/FFFFFF/lorem-ipsum.png&text=jsonplaceholder.org\",\r\n    \"status\": \"published\",\r\n    \"category\": \"lorem\",\r\n    \"publishedAt\": \"04/02/2023 13:25:21\",\r\n    \"updatedAt\": \"14/03/2023 17:22:20\",\r\n    \"userId\": 1\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://jsonplaceholder.org/posts/1",
+							"protocol": "http",
+							"host": [
+								"jsonplaceholder",
+								"org"
+							],
+							"path": [
+								"posts",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PATCH :id",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userId\": 1,\r\n    \"id\": 6,\r\n    \"title\": \"dolorem eum magni eos aperiam quia\",\r\n    \"body\": \"ut aspernatur corporis harum nihil quis provident sequi\\nmollitia nobis aliquid molestiae\\nperspiciatis et ea nemo ab reprehenderit accusantium quas\\nvoluptate dolores velit et doloremque molestiae\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://jsonplaceholder.org/posts/5",
+							"protocol": "http",
+							"host": [
+								"jsonplaceholder",
+								"org"
+							],
+							"path": [
+								"posts",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE :id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://jsonplaceholder.org/posts/1",
+							"protocol": "http",
+							"host": [
+								"jsonplaceholder",
+								"org"
+							],
+							"path": [
+								"posts",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "GET all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://jsonplaceholder.org/users",
+							"protocol": "http",
+							"host": [
+								"jsonplaceholder",
+								"org"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET :id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://jsonplaceholder.org/users/6",
+							"protocol": "http",
+							"host": [
+								"jsonplaceholder",
+								"org"
+							],
+							"path": [
+								"users",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET ?id=\"\"",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://jsonplaceholder.org/users?id=7",
+							"protocol": "http",
+							"host": [
+								"jsonplaceholder",
+								"org"
+							],
+							"path": [
+								"users"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "7"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 6,\r\n    \"firstname\": \"Laura\",\r\n    \"lastname\": \"Wilson\",\r\n    \"email\": \"laurawilson@example.com\",\r\n    \"birthDate\": \"1984-12-14\",\r\n    \"login\": {\r\n        \"uuid\": \"6a0eed12-9430-4d68-901f-c0d4c1c3bf14\",\r\n        \"username\": \"laurawilson\",\r\n        \"password\": \"jsonplaceholder.org\",\r\n        \"md5\": \"c1328472c5794a25723600f71c1b4586\",\r\n        \"sha1\": \"35544a31cc19bd6520af116554873167117f4d94\",\r\n        \"registered\": \"2022-01-10T09:03:03.030Z\"\r\n    },\r\n    \"address\": {\r\n        \"street\": \"789 Maple Street\",\r\n        \"suite\": \"Apt. 10\",\r\n        \"city\": \"Anytown\",\r\n        \"zipcode\": \"12345-6789\",\r\n        \"geo\": {\r\n            \"lat\": \"42.3456\",\r\n            \"lng\": \"-71.2345\"\r\n        }\r\n    },\r\n    \"phone\": \"(555) 555-1234\",\r\n    \"website\": \"www.laurawilson.com\",\r\n    \"company\": {\r\n        \"name\": \"LMN Corporation\",\r\n        \"catchPhrase\": \"Innovative solutions for a better future\",\r\n        \"bs\": \"Technology\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://jsonplaceholder.org/users/",
+							"protocol": "http",
+							"host": [
+								"jsonplaceholder",
+								"org"
+							],
+							"path": [
+								"users",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PATCH :id",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 6,\r\n    \"firstname\": \"Laura\",\r\n    \"lastname\": \"Wilson\",\r\n    \"email\": \"laurawilson@example.com\",\r\n    \"birthDate\": \"1984-12-14\",\r\n    \"login\": {\r\n        \"uuid\": \"6a0eed12-9430-4d68-901f-c0d4c1c3bf14\",\r\n        \"username\": \"laurawilson\",\r\n        \"password\": \"jsonplaceholder.org\",\r\n        \"md5\": \"c1328472c5794a25723600f71c1b4586\",\r\n        \"sha1\": \"35544a31cc19bd6520af116554873167117f4d94\",\r\n        \"registered\": \"2022-01-10T09:03:03.030Z\"\r\n    },\r\n    \"address\": {\r\n        \"street\": \"789 Maple Street\",\r\n        \"suite\": \"Apt. 10\",\r\n        \"city\": \"Anytown\",\r\n        \"zipcode\": \"12345-6789\",\r\n        \"geo\": {\r\n            \"lat\": \"42.3456\",\r\n            \"lng\": \"-71.2345\"\r\n        }\r\n    },\r\n    \"phone\": \"(555) 555-1234\",\r\n    \"website\": \"www.laurawilson.com\",\r\n    \"company\": {\r\n        \"name\": \"LMN Corporation\",\r\n        \"catchPhrase\": \"Innovative solutions for a better future\",\r\n        \"bs\": \"Technology\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://jsonplaceholder.org/users/5",
+							"protocol": "http",
+							"host": [
+								"jsonplaceholder",
+								"org"
+							],
+							"path": [
+								"users",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT :id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 6,\r\n    \"firstname\": \"Laura\",\r\n    \"lastname\": \"Wilson\",\r\n    \"email\": \"laurawilson@example.com\",\r\n    \"birthDate\": \"1984-12-14\",\r\n    \"login\": {\r\n        \"uuid\": \"6a0eed12-9430-4d68-901f-c0d4c1c3bf14\",\r\n        \"username\": \"laurawilson\",\r\n        \"password\": \"jsonplaceholder.org\",\r\n        \"md5\": \"c1328472c5794a25723600f71c1b4586\",\r\n        \"sha1\": \"35544a31cc19bd6520af116554873167117f4d94\",\r\n        \"registered\": \"2022-01-10T09:03:03.030Z\"\r\n    },\r\n    \"address\": {\r\n        \"street\": \"789 Maple Street\",\r\n        \"suite\": \"Apt. 10\",\r\n        \"city\": \"Anytown\",\r\n        \"zipcode\": \"12345-6789\",\r\n        \"geo\": {\r\n            \"lat\": \"42.3456\",\r\n            \"lng\": \"-71.2345\"\r\n        }\r\n    },\r\n    \"phone\": \"(555) 555-1234\",\r\n    \"website\": \"www.laurawilson.com\",\r\n    \"company\": {\r\n        \"name\": \"LMN Corporation\",\r\n        \"catchPhrase\": \"Innovative solutions for a better future\",\r\n        \"bs\": \"Technology\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://jsonplaceholder.org/users/1",
+							"protocol": "http",
+							"host": [
+								"jsonplaceholder",
+								"org"
+							],
+							"path": [
+								"users",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE :id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://jsonplaceholder.org/users/1",
+							"protocol": "http",
+							"host": [
+								"jsonplaceholder",
+								"org"
+							],
+							"path": [
+								"users",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "comments",
+			"item": [
+				{
+					"name": "GET all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://jsonplaceholder.org/comments",
+							"protocol": "http",
+							"host": [
+								"jsonplaceholder",
+								"org"
+							],
+							"path": [
+								"comments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET :id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://jsonplaceholder.org/comments/7",
+							"protocol": "http",
+							"host": [
+								"jsonplaceholder",
+								"org"
+							],
+							"path": [
+								"comments",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET ?id=\"\"",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://jsonplaceholder.org/comments?id=7",
+							"protocol": "http",
+							"host": [
+								"jsonplaceholder",
+								"org"
+							],
+							"path": [
+								"comments"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "7"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"postId\": 1,\r\n        \"id\": 1,\r\n        \"name\": \"Mauris vel tellus\",\r\n        \"email\": \"mauris.vel.tellus@example.com\",\r\n        \"body\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut hendrerit ipsum ac velit sollicitudin, id fringilla sapien dapibus. Nulla condimentum ullamcorper tellus vel tristique. Donec nec sagittis ante. Proin semper, nunc et bibendum eleifend, odio justo facilisis nunc, vel ullamcorper tortor sapien at eros. Etiam euismod felis vel elit lobortis laoreet. Maecenas ac lobortis diam. Proin vitae neque sit amet ante pretium consectetur. Nulla facilisi.\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://jsonplaceholder.org/comments/",
+							"protocol": "http",
+							"host": [
+								"jsonplaceholder",
+								"org"
+							],
+							"path": [
+								"comments",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PATCH :id",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"postId\": 1,\r\n        \"name\": \"Mauris vel tellus\",\r\n        \"email\": \"mauris.vel.tellus@example.com\",\r\n        \"body\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut hendrerit ipsum ac velit sollicitudin, id fringilla sapien dapibus. Nulla condimentum ullamcorper tellus vel tristique. Donec nec sagittis ante. Proin semper, nunc et bibendum eleifend, odio justo facilisis nunc, vel ullamcorper tortor sapien at eros. Etiam euismod felis vel elit lobortis laoreet. Maecenas ac lobortis diam. Proin vitae neque sit amet ante pretium consectetur. Nulla facilisi.\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://jsonplaceholder.org/comments/6",
+							"protocol": "http",
+							"host": [
+								"jsonplaceholder",
+								"org"
+							],
+							"path": [
+								"comments",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT :id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"postId\": 1,\r\n        \"name\": \"Mauris vel tellusa\",\r\n        \"email\": \"mauris.vel.tellus@example.com\",\r\n        \"body\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut hendrerit ipsum ac velit sollicitudin, id fringilla sapien dapibus. Nulla condimentum ullamcorper tellus vel tristique. Donec nec sagittis ante. Proin semper, nunc et bibendum eleifend, odio justo facilisis nunc, vel ullamcorper tortor sapien at eros. Etiam euismod felis vel elit lobortis laoreet. Maecenas ac lobortis diam. Proin vitae neque sit amet ante pretium consectetur. Nulla facilisi.\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://jsonplaceholder.org/comments/3",
+							"protocol": "http",
+							"host": [
+								"jsonplaceholder",
+								"org"
+							],
+							"path": [
+								"comments",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE :id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://jsonplaceholder.org/comments/1",
+							"protocol": "http",
+							"host": [
+								"jsonplaceholder",
+								"org"
+							],
+							"path": [
+								"comments",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
