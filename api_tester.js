@@ -55,6 +55,16 @@ function extractEndpoints(postmanCollection) {
   return endpoints;
 }
 
+function stringify(data) {
+  if(!data) return ""
+
+  try {
+    return JSON.stringify(data);
+  } catch (error) {
+    return ""
+  }
+}
+
 async function makeRequest(endpoint) {
   const { method, url, headers, data } = endpoint;
   const start = Date.now();
@@ -69,10 +79,10 @@ async function makeRequest(endpoint) {
     return {
       url,
       method,
-      requestBody: data,
-      responseBody: response.data,
+      requestBody: stringify(data),
+      responseBody: stringify(response.data),
       responseTime: end - start,
-      responseHeaders: response.headers,
+      responseHeaders: stringify(response.headers),
       statusCode: response.status
     };
   } catch (error) {
