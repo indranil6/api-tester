@@ -5,7 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node api_tester.js",
-    "newman": "newman run postman_collection.json -r html,htmlextra,cli,csv,json",
+    "newman": "npx newman run postman_collection.json -r html,htmlextra,cli,csv,json --reporter-csv-includeBody --reporter-html-template template.hbs",
     "newman-script": "node newman_runner.js"
   },
   "keywords": [],
